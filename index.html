@@ -105,11 +105,15 @@ const removerBotao = document.createElement('button');
 removerBotao.textContent = 'Remover';
 removerBotao.classList.add('btn-remover');
 
+// B. DEFINIÇÃO DO EVENTO DE REMOÇÃO (addEventListener)
+// Anexa a função 'removerFilme' ao clique do botão.
+removerBotao.addEventListener('click', () => {
+// Ao clicar, chamamos a função, passando o índice (posição) e a própria <div> (filmeDiv).
+removerFilme(indice, filmeDiv)
+});
 
-
-
-
-
+// C.ANEXAR ELEMENTOS (appendChild)
+//Monta a estrutura hierárquica:
 
  }
 
