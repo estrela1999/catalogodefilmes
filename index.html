@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Filmes</title>
+    <title>FILMFLIX - Catálogo de Filmes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,7 +28,7 @@
 
     <script>
         // Use sua chave da OMDB API aqui
-        const API_KEY = 'c7aad6a4'; 
+        const API_KEY = '6a4c7aad'; 
         let catalogo = JSON.parse(localStorage.getItem('catalogo')) || [];
 
         const form = document.getElementById('cadastro-filme');
@@ -155,5 +155,49 @@
         carregarCatalogo();
     </script>
 
+    <header class="header">
+<div class="logo"> ► FILMFLIX</div>
+<Nav class="nav-menu">
+<a href="#"> Minha lista </a>
+<a href="#"> generos</a>
+<a href="#">sobre</a>
+<button class="menu-toggle"> ☰ </button>
+</Nav>
+    </header>
+
+    <section class="controls-section">
+<div class="search-bar">
+    <input type="text" placeholder="Q buscar filmes..." class="search-input">
+</div>
+
+<select class="filter-dropdown" aria-label="genero">
+<option value="default">ordenar</option>
+<option value="recentes">mais recemtes</option>
+<option value="avaliacao">melhor avaliação</option>
+
+
+
+
+
+
+
+
+
+
+
+</select>
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
 </body>
 </html>
