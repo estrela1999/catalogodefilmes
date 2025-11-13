@@ -85,15 +85,18 @@ const data = await response.json();
 return data.Response === 'True' ? data : null;
 } catch (error) {
 console.error("Erro ao buscar detalhes:", error);
-
+return null;
+  }
 }
 
 
+// --- D. Lógica para Exibir Detalhes/Trailer (Implementação do Modal) ---
+// Se vocÊ usava uma API diferente para trailer, integre-a aqui.
 
 
 
 
-}
+
 
 
 
